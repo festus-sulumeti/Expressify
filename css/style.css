@@ -36,3 +36,26 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #video-container, #emotion-container {
+        width: 100%;
+        height: auto;
+    }
+
+    #video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
