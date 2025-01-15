@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expressify - Real-time Facial Expression Detection</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
     <header>
@@ -17,6 +18,7 @@
     <button onclick="getStarted()">Get Started</button>
 
     <div id="video-container" style="display:none;">
+        <button id="close-button" onclick="closeCamera()"><i class="uil uil-times-circle"></i></button>
         <video id="video" width="640" height="480" autoplay></video>
     </div>
 
