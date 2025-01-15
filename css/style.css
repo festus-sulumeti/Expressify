@@ -1,71 +1,73 @@
-     /* Base styles for the landing page */
-     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #4a90e2, #9453c1);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        text-align: center;
-        overflow: hidden;
-    }
+ /* Base styles for the landing page */
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white; /* 60% White */
+    color: #333; /* Dark gray for text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
 
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        animation: fadeInDown 1s ease-out;
-    }
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray */
+    animation: fadeInDown 1s ease-out;
+}
 
-    p {
-        font-size: 1.2rem;
-        margin-bottom: 40px;
-        max-width: 600px;
-        animation: fadeInUp 1s ease-out 0.5s;
-    }
+p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    color: #666; /* Lighter gray for paragraph text */
+    animation: fadeInUp 1s ease-out 0.5s;
+}
 
-    button {
-        background-color: white;
-        color: #4a90e2;
-        font-size: 1rem;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: transform 0.2s, background-color 0.3s;
-        animation: fadeInUp 1s ease-out 0.8s;
-    }
+button {
+    background-color: #29AB87; /* 10% Jungle Green */
+    color: white; /* Text color on button */
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+    animation: fadeInUp 1s ease-out 0.8s;
+}
 
-    button:hover {
-        transform: scale(1.1);
-        background-color: #f0f0f0;
-    }
+button:hover {
+    transform: scale(1.1);
+    background-color: #228B6A; /* Darker Jungle Green when hovered */
+}
 
-    button:active {
-        transform: scale(0.9);
-    }
+button:active {
+    transform: scale(0.9);
+}
 
-    @keyframes fadeInDown {
-        from {
-            opacity: 0;
-            transform: translateY(-50px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(50px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
