@@ -18,7 +18,9 @@
     <button onclick="getStarted()">Get Started</button>
 
     <div id="video-container" style="display:none;">
-        <button id="close-button" onclick="closeCamera()"><i class="uil uil-times-circle"></i></button>
+        <div id="close-button-container">
+            <button id="close-button" onclick="closeCamera()"><i class="uil uil-times-circle"></i></button>
+        </div>
         <video id="video" width="640" height="480" autoplay></video>
     </div>
 
