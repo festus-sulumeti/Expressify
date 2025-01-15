@@ -6,6 +6,7 @@
     <title>Expressify - Real-time Facial Expression Detection</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
 </head>
 <body>
     <header>
@@ -22,6 +23,7 @@
             <button id="close-button" onclick="closeCamera()"><i class="uil uil-times-circle"></i></button>
         </div>
         <video id="video" width="640" height="480" autoplay></video>
+        <canvas id="overlay" width="640" height="480"></canvas>
     </div>
 
     <script src="./js/index.js"></script>
