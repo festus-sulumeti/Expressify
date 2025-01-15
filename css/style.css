@@ -1,61 +1,71 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    color: #333;
-}
-
-#video-container {
-    margin: 20px auto;
-    width: 640px;
-    height: 480px;
-    border: 2px solid #333;
-    background-color: #000;
-}
-
-#emotion-container {
-    margin: 20px auto;
-    width: 640px;
-    text-align: left;
-}
-
-#emotion-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-#emotion-list li {
-    background-color: #fff;
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    #video-container, #emotion-container {
-        width: 100%;
-        height: auto;
+     /* Base styles for the landing page */
+     body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #4a90e2, #9453c1);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        overflow: hidden;
     }
 
-    #video {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        animation: fadeInDown 1s ease-out;
     }
 
     p {
-        font-size: 1em;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        max-width: 600px;
+        animation: fadeInUp 1s ease-out 0.5s;
     }
-}
+
+    button {
+        background-color: white;
+        color: #4a90e2;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: transform 0.2s, background-color 0.3s;
+        animation: fadeInUp 1s ease-out 0.8s;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        background-color: #f0f0f0;
+    }
+
+    button:active {
+        transform: scale(0.9);
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
