@@ -1,5 +1,5 @@
- /* Base styles for the landing page */
- body {
+/* Base styles for the landing page */
+body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: white; /* 60% White */
@@ -47,6 +47,38 @@ button:hover {
 }
 
 button:active {
+    transform: scale(0.9);
+}
+
+/* Video container styling */
+#video-container {
+    position: relative;
+    margin: 20px auto;
+    width: 640px;
+    height: 480px;
+    border: 2px solid #333;
+    background-color: #000;
+    display: none; /* Initially hidden */
+}
+
+#close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2rem; /* Larger text for better icon visibility */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+#close-button:hover {
+    color: #333; /* Accent color on hover */
+    transform: scale(1.1);
+}
+
+#close-button:active {
     transform: scale(0.9);
 }
 
